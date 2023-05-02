@@ -1,25 +1,12 @@
 apiVersion: kpt.dev/v1
+info:
+  description: example upf blueprint package
 kind: Kptfile
 metadata: # kpt-merge: /upf
-  name: upf
   annotations:
     config.kubernetes.io/local-config: "true"
     internal.kpt.dev/upstream-identifier: kpt.dev|Kptfile|default|upf
-upstream:
-  type: git
-  git:
-    repo: https://github.com/henderiw-nephio/blueprints.git
-    directory: upf
-    ref: main
-upstreamLock:
-  type: git
-  git:
-    repo: https://github.com/henderiw-nephio/blueprints.git
-    directory: upf
-    ref: main
-    commit: bcc6f5da81c99a310c3706c7985c03fd1c359df1
-info:
-  description: example upf blueprint package
+  name: upf
 pipeline:
   mutators:
   - image: europe-docker.pkg.dev/srlinux/eu.gcr.io/interface-fn:latest
@@ -71,3 +58,16 @@ status:
     reason: req.nephio.org/v1alpha1.Interface.n6
     status: "False"
     type: k8s.cni.cncf.io/v1.NetworkAttachmentDefinition.n6
+upstream:
+  git:
+    directory: upf
+    ref: main
+    repo: https://github.com/henderiw-nephio/blueprints.git
+  type: git
+upstreamLock:
+  git:
+    commit: bcc6f5da81c99a310c3706c7985c03fd1c359df1
+    directory: upf
+    ref: main
+    repo: https://github.com/henderiw-nephio/blueprints.git
+  type: git
