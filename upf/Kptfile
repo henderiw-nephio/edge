@@ -16,9 +16,9 @@ status:
   - message: update for condition
     status: "False"
     type: req.nephio.org/v1alpha1.Interface.n3
-  - message: create resource
+  - message: update done
     reason: req.nephio.org/v1alpha1.Interface.n3
-    status: "False"
+    status: "True"
     type: ipam.alloc.nephio.org/v1alpha1.IPAllocation.n3
   - message: create resource
     reason: req.nephio.org/v1alpha1.Interface.n3
@@ -31,9 +31,9 @@ status:
   - message: update for condition
     status: "False"
     type: req.nephio.org/v1alpha1.Interface.n4
-  - message: create resource
+  - message: update done
     reason: req.nephio.org/v1alpha1.Interface.n4
-    status: "False"
+    status: "True"
     type: ipam.alloc.nephio.org/v1alpha1.IPAllocation.n4
   - message: create resource
     reason: req.nephio.org/v1alpha1.Interface.n4
@@ -46,9 +46,9 @@ status:
   - message: update for condition
     status: "False"
     type: req.nephio.org/v1alpha1.Interface.n6
-  - message: create resource
+  - message: update done
     reason: req.nephio.org/v1alpha1.Interface.n6
-    status: "False"
+    status: "True"
     type: ipam.alloc.nephio.org/v1alpha1.IPAllocation.n6
   - message: create resource
     reason: req.nephio.org/v1alpha1.Interface.n6

@@ -11,4 +11,6 @@ spec:
       nephio.org/site: edge1
   networkInstance:
     name: vpc-internal
-status: {}
+status:
+  prefix: 172.2.0.254/24
+  gateway: 172.2.0.1
