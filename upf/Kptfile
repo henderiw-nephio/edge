@@ -4,7 +4,7 @@ metadata: # kpt-merge: /upf
   name: upf
   annotations:
     config.kubernetes.io/local-config: "true"
-    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|upf'
+    internal.kpt.dev/upstream-identifier: kpt.dev|Kptfile|default|upf
 upstream:
   type: git
   git:
@@ -24,3 +24,50 @@ pipeline:
   mutators:
   - image: europe-docker.pkg.dev/srlinux/eu.gcr.io/interface-fn:latest
   - image: europe-docker.pkg.dev/srlinux/eu.gcr.io/interface-fn:latest
+status:
+  conditions:
+  - message: update for condition
+    status: "False"
+    type: req.nephio.org/v1alpha1.Interface.n3
+  - message: create resource
+    reason: req.nephio.org/v1alpha1.Interface.n3
+    status: "False"
+    type: ipam.alloc.nephio.org/v1alpha1.IPAllocation.n3
+  - message: create resource
+    reason: req.nephio.org/v1alpha1.Interface.n3
+    status: "False"
+    type: vlan.alloc.nephio.org/v1alpha1.VLANAllocation.n3
+  - message: create resource
+    reason: req.nephio.org/v1alpha1.Interface.n3
+    status: "False"
+    type: k8s.cni.cncf.io/v1.NetworkAttachmentDefinition.n3
+  - message: update for condition
+    status: "False"
+    type: req.nephio.org/v1alpha1.Interface.n4
+  - message: create resource
+    reason: req.nephio.org/v1alpha1.Interface.n4
+    status: "False"
+    type: ipam.alloc.nephio.org/v1alpha1.IPAllocation.n4
+  - message: create resource
+    reason: req.nephio.org/v1alpha1.Interface.n4
+    status: "False"
+    type: vlan.alloc.nephio.org/v1alpha1.VLANAllocation.n4
+  - message: create resource
+    reason: req.nephio.org/v1alpha1.Interface.n4
+    status: "False"
+    type: k8s.cni.cncf.io/v1.NetworkAttachmentDefinition.n4
+  - message: update for condition
+    status: "False"
+    type: req.nephio.org/v1alpha1.Interface.n6
+  - message: create resource
+    reason: req.nephio.org/v1alpha1.Interface.n6
+    status: "False"
+    type: ipam.alloc.nephio.org/v1alpha1.IPAllocation.n6
+  - message: create resource
+    reason: req.nephio.org/v1alpha1.Interface.n6
+    status: "False"
+    type: vlan.alloc.nephio.org/v1alpha1.VLANAllocation.n6
+  - message: create resource
+    reason: req.nephio.org/v1alpha1.Interface.n6
+    status: "False"
+    type: k8s.cni.cncf.io/v1.NetworkAttachmentDefinition.n6
