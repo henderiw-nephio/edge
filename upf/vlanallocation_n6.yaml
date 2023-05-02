@@ -7,5 +7,4 @@ metadata:
 spec:
   vlanDatabase:
     name: edge1
-status:
-  vlanID: 6
+status: {}
