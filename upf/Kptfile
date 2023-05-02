@@ -20,9 +20,9 @@ status:
     reason: req.nephio.org/v1alpha1.Interface.n3
     status: "True"
     type: ipam.alloc.nephio.org/v1alpha1.IPAllocation.n3
-  - message: create resource
+  - message: update done
     reason: req.nephio.org/v1alpha1.Interface.n3
-    status: "False"
+    status: "True"
     type: vlan.alloc.nephio.org/v1alpha1.VLANAllocation.n3
   - message: create resource
     reason: req.nephio.org/v1alpha1.Interface.n3
@@ -35,9 +35,9 @@ status:
     reason: req.nephio.org/v1alpha1.Interface.n4
     status: "True"
     type: ipam.alloc.nephio.org/v1alpha1.IPAllocation.n4
-  - message: create resource
+  - message: update done
     reason: req.nephio.org/v1alpha1.Interface.n4
-    status: "False"
+    status: "True"
     type: vlan.alloc.nephio.org/v1alpha1.VLANAllocation.n4
   - message: create resource
     reason: req.nephio.org/v1alpha1.Interface.n4
@@ -50,9 +50,9 @@ status:
     reason: req.nephio.org/v1alpha1.Interface.n6
     status: "True"
     type: ipam.alloc.nephio.org/v1alpha1.IPAllocation.n6
-  - message: create resource
+  - message: update done
     reason: req.nephio.org/v1alpha1.Interface.n6
-    status: "False"
+    status: "True"
     type: vlan.alloc.nephio.org/v1alpha1.VLANAllocation.n6
   - message: create resource
     reason: req.nephio.org/v1alpha1.Interface.n6
